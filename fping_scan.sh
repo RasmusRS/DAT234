@@ -1,1 +1,8 @@
-fping -r 0 -g 192.168.1.1 192.168.1.255
+#!/bin/bash
+echo input ip
+
+read varname
+
+echo scanning...
+
+fping -r 0 -g $varname

@@ -1,1 +1,6 @@
-nmap -sP -PE 192.168.1.{1..255} --send-ip --reason -n -v
+#!/bin/bash
+echo input ip
+read varname
+echo scanning...
+
+nmap -sP -PE $varname --send-ip --reason -n -v
